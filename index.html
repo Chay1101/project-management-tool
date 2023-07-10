@@ -86,7 +86,7 @@
                         if (message !== '' && name !== '') {
                             let userColor = localStorage.getItem(name);
                             if (!userColor) {
-                                userColor = getRandomColor();
+                                userColor = "lightpink";
                                 localStorage.setItem(name, userColor);
                             }
 
@@ -112,7 +112,7 @@
 
                     //For generating random colors for each user.
                     function getRandomColor() {
-                        const colors = ['#ff0000', '#00ff00', '#0000ff', '#ff00ff', '#ffff00', '#00ffff'];
+                        const colors = ['#ffc0cb', '#7fffd4', '#c0c0c0', '#ffff00', '#add8e6'];
                         return colors[Math.floor(Math.random() * colors.length)];
                     }
 
